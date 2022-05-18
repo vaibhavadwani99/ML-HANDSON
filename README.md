@@ -14,6 +14,14 @@ The following techniques have been used:
  - Multiple sampling techinuqies are evaluated. The data set is split into train and test.
  - All the above said modelling techniques are tried and evaluated. The final metric used to evaluate is mean squared error.
 
+ ## installation 
+ A .whl file (read: wheel file) is a zip archive that contains all the files necessary to run a Python application.
+1) Open your Windows command line or Powershell.
+2) cd into the folder where the yourPackage.whl file resides.
+3) Optional: Install pip on Windows. Chances are that it’s already installed—it comes with many Python distributions.
+   Run the following command:
+   pip install housing_price_prediction.whl
+
 ## To excute the script
 python < scriptname.py >
 ## To excute the script.
