@@ -16,4 +16,13 @@ The following techniques have been used:
 
 ## To excute the script
 python < scriptname.py >
+## To excute the script.
+- python3 src/HousePricePrediction/ingest_data.py -h to see argument options.
+- python3 src/HousePricePrediction/ingest_data.py --ingest_data_path INGEST_DATA_PATH --log_level LOG_LEVEL --log_path LOG_PATH --no_console_log
+
+- python3 src/HousePricePrediction/train.py -h to see argument options.
+- python3 src/HousePricePrediction/train.py  --dataset DATASET --output_model_path OUTPUT_MODEL_PATH --log_level LOG_LEVEL --log_path LOG_PATH --no_console_log
+
+- python3 src/HousePricePrediction/score.py -h to see argument options.
+- python3 src/HousePricePrediction/score.py --model_folder MODEL_FOLDER --dataset_folder DATASET_FOLDER --output_folder OUTPUT_FOLDER --log_path LOG_PATH
 
