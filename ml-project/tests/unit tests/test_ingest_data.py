@@ -1,12 +1,12 @@
 import sys 
-sys.path.insert(0,"/mnt/d/mle-training/ml-project/src/housing_price_prediction")
-import ingest_data
+# sys.path.insert(0,"ml-project/src/housing_price_prediction")
+from housing_price_prediction import ingest_data 
 import unittest
 
 class Test_Train(unittest.TestCase):
     def test_parse_args(self):
         # checking if stored in default paths
-        self.assertEqual(ingest_data.args.ingest_data_path,"/mnt/d/mle-training/ml-project/data/processed/")
+        self.assertEqual(ingest_data.args.ingest_data_path,"data/processed/")
         self.assertEqual(ingest_data.args.log_level,"DEBUG")
     
     def test_load_data(self):

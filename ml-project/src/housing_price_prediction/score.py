@@ -15,9 +15,9 @@ import sys
 #sys.path.insert(0,"/mnt/d/mle-training")
 
 parser=argparse.ArgumentParser()
-parser.add_argument("--model_folder",default="/mnt/d/mle-training/ml-project/artifacts/models/",type=str,help="provide the model folder")
-parser.add_argument("--dataset_folder",default="/mnt/d/mle-training/ml-project/data/processed/test.csv",type=str,help="provide dataset folder")
-parser.add_argument("--output folder",default="/mnt/d/mle-training/ml-project/artifacts",type=str,help="provide the output folder")
+parser.add_argument("--model_folder",default="artifacts/models/",type=str,help="provide the model folder")
+parser.add_argument("--dataset_folder",default="data/processed/test.csv",type=str,help="provide dataset folder")
+parser.add_argument("--output folder",default="artifacts",type=str,help="provide the output folder")
 parser.add_argument("--log_level", type = str,default="DEBUG",help="specifiy level of debug")
 parser.add_argument("--log_path", type = str,help="specify the path where to save log file")
 parser.add_argument("--no_console_log", type = str,default=None,help="specify to log on console or not")

@@ -1,11 +1,11 @@
 import sys 
-sys.path.insert(0,"/mnt/d/mle-training/ml-project/src/housing_price_prediction")
-import score
+#sys.path.insert(0,"/mnt/d/mle-training/ml-project/src/housing_price_prediction")
+from housing_price_prediction import score
 import unittest 
  
 class Test_score(unittest.TestCase):
     def test_pars_args(self):
-        self.assertEqual(score.args.dataset_folder,"/mnt/d/mle-training/ml-project/data/processed/test.csv")
+        self.assertEqual(score.args.dataset_folder,"processed/test.csv")
 
     def test_score(self):
         method=score.scores()

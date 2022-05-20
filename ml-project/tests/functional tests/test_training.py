@@ -1,6 +1,6 @@
 import sys
-sys.path.insert(0,"/mnt/d/mle-training/ml-project/src/housing_price_prediction")
-import ingest_data,train,score 
+#sys.path.insert(0,"/mnt/d/mle-training/ml-project/src/housing_price_prediction")
+from housing_price_prediction import ingest_data,score,train
 import pandas as pd 
 import pytest 
 import pickle 

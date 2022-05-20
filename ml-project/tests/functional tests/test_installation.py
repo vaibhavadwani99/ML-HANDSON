@@ -1,6 +1,6 @@
 import sys
 import importlib.util
-sys.path.insert(0,"/mnt/d/mle-training/ml-project/src")
+#sys.path.insert(0,"/mnt/d/mle-training/ml-project/src")
 import housing_price_prediction
 
 

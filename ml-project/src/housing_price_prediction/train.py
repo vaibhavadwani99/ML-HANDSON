@@ -32,8 +32,8 @@ import sys
 #sys.path.insert(0,"/mnt/d/mle-training")
 
 parser=argparse.ArgumentParser()
-parser.add_argument("--dataset",type=str,default="/mnt/d/mle-training/ml-project/data/processed/train.csv",help="enter the path to your dataset")
-parser.add_argument("--output_model_path",type=str,default="/mnt/d/mle-training/ml-project/artifacts/models/",help="enter the output path to save your model")
+parser.add_argument("--dataset",type=str,default="data/processed/train.csv",help="enter the path to your dataset")
+parser.add_argument("--output_model_path",type=str,default="artifacts/models/",help="enter the output path to save your model")
 parser.add_argument("--log_level", type = str,default="DEBUG",help="specifiy level of debug")
 parser.add_argument("--log_path", type = str,help="specify the path where to save log file")
 parser.add_argument("--no_console_log", type = str,default=None,help="specify to log on console or not")
