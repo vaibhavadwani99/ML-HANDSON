@@ -35,11 +35,11 @@ import sys
 # sys.path.insert(0,"/mnt/d/mle-training")
 
 DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
-HOUSING_PATH = "/mnt/d/mle-training/ml-project/data/raw"
+HOUSING_PATH = "data/raw"
 HOUSING_URL = DOWNLOAD_ROOT + "datasets/housing/housing.tgz"
 
 parser=argparse.ArgumentParser()
-parser.add_argument("--ingest_data_path",type=str,default="/mnt/d/mle-training/ml-project/data/processed/",help="specify the output folder or file path")
+parser.add_argument("--ingest_data_path",type=str,default="data/processed/",help="specify the output folder or file path")
 parser.add_argument("--log_level",type=str,default="DEBUG",help="specify the level of log")
 parser.add_argument("--log_path",type=str,help="specify the path where you want to save log file")
 parser.add_argument("--no_console_log",type=str,default=None,help="specify to write log on console or not")
